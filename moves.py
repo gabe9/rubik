@@ -1,4 +1,5 @@
 import globals
+
 def cTop():#rotate top clockwise
   #rotate top face
   temp = globals.cube[3][3] 
@@ -359,3 +360,32 @@ def ccBot():#rotate bottom counterclockwise
   globals.cube[3][8] = globals.cube[0][3]
   globals.cube[0][3] = globals.cube[5][0]
   globals.cube[5][0] = temp
+
+def move(moveArray):
+  for move in moveArray:
+    if move == "u":
+      cTop()
+    elif move == "u'":
+      ccTop()
+    elif move == "f":
+      cFront()
+    elif move == "f'":
+      ccFront()
+    elif move == "d":
+      cBot()
+    elif move == "d'":
+      ccBot()
+    elif move == "b":
+      cBack()
+    elif move == "b'":
+      ccBack()
+    elif move == "l":
+      cLeft()
+    elif move == "l'":
+      ccLeft()
+    elif move == "r":
+      cRight()
+    elif move == "r'":
+      ccRight()
+    else:
+      print "Move not valid."
