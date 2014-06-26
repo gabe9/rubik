@@ -1,3 +1,5 @@
+import moves
+
 g = 1#green
 r = 2#red
 b = 3#blue
@@ -72,14 +74,17 @@ fi = b
 
 #cube map
 map = [[e,e,e,da,db,dc,e,e,e],
-         [e,e,e,dd,de,df,e,e,e],
-         [e,e,e,dg,dh,di,e,e,e],
-      [ea,eb,ec,aa,ab,ac,ca,cb,cc],
-      [ed,ee,ef,ad,ae,af,cd,ce,cf],
-      [eg,eh,ei,ag,ah,ai,cg,ch,ci],
-         [e,e,e,ba,bb,bc,e,e,e],
-         [e,e,e,bd,be,bf,e,e,e],
-         [e,e,e,bg,bh,bi,e,e,e],
-         [e,e,e,fa,fb,fc,e,e,e],
-         [e,e,e,fd,fe,ff,e,e,e],
-         [e,e,e,fg,fh,fi,e,e,e]]
+       [e,e,e,dd,de,df,e,e,e],
+       [e,e,e,dg,dh,di,e,e,e],
+    [ea,eb,ec,aa,ab,ac,ca,cb,cc],
+    [ed,ee,ef,ad,ae,af,cd,ce,cf],
+    [eg,eh,ei,ag,ah,ai,cg,ch,ci],
+       [e,e,e,ba,bb,bc,e,e,e],
+       [e,e,e,bd,be,bf,e,e,e],
+       [e,e,e,bg,bh,bi,e,e,e],
+       [e,e,e,fa,fb,fc,e,e,e],
+       [e,e,e,fd,fe,ff,e,e,e],
+       [e,e,e,fg,fh,fi,e,e,e]]
+
+def move(moveArray):
+  moves.move(moveArray)

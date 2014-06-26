@@ -1,5 +1,4 @@
 import tests
-import moves
 import cube
 from random import randrange
 
@@ -8,7 +7,7 @@ def scramble():
   for i in range(25):
     index = randrange(len(cube.possibleMoves))
     scrambleMoves.append(cube.possibleMoves[index])
-  moves.move(scrambleMoves)
+  cube.move(scrambleMoves)
 
 #tests.testAllMoves()
 
