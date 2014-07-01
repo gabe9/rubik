@@ -4,7 +4,7 @@ rubik
 Right now a simple virtual rubik's cube represented by a multidemensional array.
 The cube is represented as if it were cut and unfolded, shown in the
 illustration below:
-![Cube Layout](cube.png "Cube Layout")
+![Cube Layout](img/cube.png "Cube Layout")
 
 Moves have been added so that you can rotate the cube on any side in each
 direction. The cube can be moved by inputing an array of moves into
