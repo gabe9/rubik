@@ -9,6 +9,15 @@ def testAlgo():
   moves.cRight()
   moves.cBot()
 
+def printArray(array):
+  counter = 0
+  for element in array:#array of tuples
+    counter += 1
+    ans = ""
+    for side in element:
+      ans += colors[side] 
+    print ans
+
 def printFront():
   print colors[cube.map[6][3]], colors[cube.map[6][4]], colors[cube.map[6][5]]
   print colors[cube.map[7][3]], colors[cube.map[7][4]], colors[cube.map[7][5]]

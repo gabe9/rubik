@@ -88,3 +88,14 @@ map = [[e,e,e,da,db,dc,e,e,e],
 
 def move(moveArray):
   moves.move(moveArray)
+
+def getEdges():
+  #returns the edges. First the edges on the top face, then the edges on the bottom. Going clockwise starting with the edge on the back of the cube.
+  #the order of these edges will also represent the number associated with that edge.
+  # [(ab,dh),(af,cd),(ah,bb),(ad,ef),(fh,db),(ff,cf),(fb,bh),(fd,ed)]
+  return [(map[3][4],map[2][4]),(map[4][5],map[4][6]),(map[5][4],map[6][4]),(map[4][4],map[4][3]),(map[11][4],map[0][4]),(map[10][5],map[4][8]),(map[9][4],map[8][4]),(map[10][3],map[0][4])]
+
+def getCorners():
+  #      [(aa,ec,dg),(ac,di,ca),(ai,cg,bc),(ag,ba,ei),(fg,da,ea),(fi,cc,dc),(fc,bi,ci), (fa,eg,bg)]
+  return [(map[3][3],map[3][2],map[2][3]),(map[3][5],map[2][5],map[3][6]),(map[5][5],map[5][6],map[6][5]),(map[5][3],map[6][3],map[5][2]),(map[11][3],map[0][3],map[3][0]),(map[11][5],map[3][8],map[0][5]),(map[9][5],map[8][5],map[5][8]), (map[9][3],map[5][0],map[8][3])]
+
