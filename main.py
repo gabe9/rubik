@@ -11,10 +11,6 @@ def scramble():
 
 #tests.testAllMoves()
 
-# scramble()#scrambles cube
+#scramble()#scrambles cube
 tests.printCube()
 
-print "Corners:"
-tests.printArray(cube.getCorners())
-print "Edges:"
-tests.printArray(cube.getEdges())
