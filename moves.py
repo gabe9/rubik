@@ -388,4 +388,4 @@ def move(moveArray):
     elif move == "r'":
       ccRight()
     else:
-      print "Move not valid."
+      return "Move not valid."

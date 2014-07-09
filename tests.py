@@ -3,13 +3,7 @@ import moves
 
 colors = {1:'g', 2:'r', 3:'b', 4:'o', 5:'y', 6:'w'}
 
-def testAlgo():
-  moves.ccRight()
-  moves.ccBot()
-  moves.cRight()
-  moves.cBot()
-
-def printArray(array):
+def printCubie(array):
   counter = 0
   for element in array:#array of tuples
     counter += 1

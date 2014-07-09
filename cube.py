@@ -90,7 +90,7 @@ def move(moveArray):
   moves.move(moveArray)
 
 def getEdges():
-  #returns the edges. First the edges on the top face, then the edges on the bottom. Going clockwise starting with the edge on the back of the cube.
+  #returns the edges. First the edges on the top face, then the edges in the middle slice of the cube, then finally the edges on the bottom. Going clockwise starting with the edge on the back of the cube.
   #the order of these edges will also represent the number associated with that edge.
   # [(ab,dh),(af,cd),(ah,bb),(ad,ef),(eb,dd),(df,db),(ch,bf),(bd,eh),(fh,db),(ff,cf),(fb,bh),(fd,ed)]
   return [(map[3][4],map[2][4]),(map[4][5],map[4][6]),(map[5][4],map[6][4]),(map[4][3],map[4][2]),(map[3][1],map[1][3]),(map[1][5],map[3][7]),(map[5][7],map[7][5]),(map[7][3],map[5][1]),(map[11][4],map[0][4]),(map[10][5],map[4][8]),(map[9][4],map[8][4]),(map[10][3],map[4][0])]
